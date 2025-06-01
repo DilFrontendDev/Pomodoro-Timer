@@ -1,0 +1,437 @@
+@font-face {
+  font-family: "pop bold";
+  src: url(fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "inter bold";
+  src: url(fonts/Inter/Inter_18pt-Bold.ttf);
+}
+
+@font-face {
+  font-family: "lato bold";
+  src: url(fonts/Lato/Lato-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+:root {
+  --primary-color: red;
+}
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    padding: 0 10rem;
+    margin: 0 0 5rem 0;
+  }
+
+  .container .timer_container {
+    margin: 2rem 0 0 0;
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container .timer_container .timer_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 0 black;
+    padding: 2.5rem 0;
+    border: 0.13rem solid rgb(0, 0, 0);
+    margin: 3rem 0 0 0;
+  }
+
+  .container .timer_container .timer_card span {
+    font-family: "lato bold";
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+    color: rgba(36, 36, 36, 0.849);
+  }
+
+  .container .timer_container .timer_card .display_timer {
+    width: 15rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: "pop bold";
+    font-size: 4.5rem;
+    color: rgb(29, 29, 29);
+  }
+
+  .container .button_container {
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 16rem;
+  }
+
+  .container .button_container .start_stop,
+  .container .button_container .reset {
+    border: none;
+    background-color: white;
+    color: black;
+    border: 0.2rem solid black;
+    padding: 0.6rem 1rem;
+    font-family: "inter bold";
+    border-radius: 0.4rem;
+    box-shadow: 0 0.1rem 0 black;
+    font-size: 1.8rem;
+  }
+
+  .container .button_container .start_stop:active {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0;
+  }
+
+  .container .button_container .reset:active {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0;
+  }
+
+  .container .button_container .start_stop:hover {
+    cursor: pointer;
+  }
+
+  .container .button_container .reset:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 2560px) {
+  .container {
+    padding: 0 19rem;
+    margin: 0 0 6rem 0;
+  }
+
+  .container .timer_container {
+    margin: 3rem 0 0 0;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container .timer_container .timer_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 0 black;
+    padding: 3rem 0;
+    border: 0.13rem solid rgb(0, 0, 0);
+    margin: 4rem 0 0 0;
+  }
+
+  .container .timer_container .timer_card span {
+    font-family: "lato bold";
+    font-size: 3rem;
+    margin: 0 0 0.5rem 0;
+    color: rgba(36, 36, 36, 0.849);
+  }
+
+  .container .timer_container .timer_card .display_timer {
+    width: 18rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: "pop bold";
+    font-size: 5rem;
+    color: rgb(29, 29, 29);
+  }
+
+  .container .button_container {
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18rem;
+  }
+
+  .container .button_container .start_stop,
+  .container .button_container .reset {
+    border: none;
+    background-color: white;
+    color: black;
+    border: 0.2rem solid black;
+    padding: 0.7rem 1.2rem;
+    font-family: "inter bold";
+    border-radius: 0.4rem;
+    box-shadow: 0 0.1rem 0 black;
+    font-size: 2rem;
+  }
+
+  .container .button_container .start_stop:active {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0;
+  }
+
+  .container .button_container .reset:active {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0;
+  }
+
+  .container .button_container .start_stop:hover {
+    cursor: pointer;
+  }
+
+  .container .button_container .reset:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    padding: 0 6rem;
+  }
+
+  .container .timer_container {
+    margin: 2rem 0 0 0;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container .timer_container .timer_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 0 black;
+    padding: 2rem 0;
+    border: 0.13rem solid rgb(0, 0, 0);
+    margin: 2.5rem 0 0 0;
+  }
+
+  .container .timer_container .timer_card span {
+    font-family: "lato bold";
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem 0;
+    color: rgba(36, 36, 36, 0.849);
+  }
+
+  .container .timer_container .timer_card .display_timer {
+    width: 13rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: "pop bold";
+    font-size: 4rem;
+    color: rgb(29, 29, 29);
+  }
+
+  .container .button_container {
+    margin: 0.8rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 14rem;
+  }
+
+  .container .button_container .start_stop,
+  .container .button_container .reset {
+    border: none;
+    background-color: white;
+    color: black;
+    border: 0.2rem solid black;
+    padding: 0.5rem 0.9rem;
+    font-family: "inter bold";
+    border-radius: 0.4rem;
+    box-shadow: 0 0.1rem 0 black;
+    font-size: 1.7rem;
+  }
+
+  .container .button_container .start_stop:active {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0;
+  }
+
+  .container .button_container .reset:active {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 4rem;
+  }
+
+  .timer_container {
+    margin: 2rem 0 0 0;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .timer_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 0 black;
+    padding: 2rem 0;
+    border: 0.13rem solid rgb(0, 0, 0);
+    margin: 2.5rem 0 0 0;
+  }
+
+  .timer_card span {
+    font-family: "lato bold";
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+    color: rgba(36, 36, 36, 0.849);
+  }
+
+  .display_timer {
+    width: 13rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: "pop bold";
+    font-size: 3.5rem;
+    color: rgb(29, 29, 29);
+  }
+
+  .button_container {
+    margin: 0.8rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12rem;
+  }
+
+  .start_stop,
+  .reset {
+    border: none;
+    background-color: white;
+    color: black;
+    border: 0.2rem solid black;
+    padding: 0.5rem 0.9rem;
+    font-family: "inter bold";
+    border-radius: 0.4rem;
+    box-shadow: 0 0.1rem 0 black;
+    font-size: 1.4rem;
+  }
+
+  .start_stop:active {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0;
+  }
+
+  .reset:active {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    padding: 0;
+  }
+
+  .start_stop,
+  .reset {
+    border: none;
+    background-color: white;
+    color: black;
+    border: 0.2rem solid black;
+    padding: 0.5rem 0.9rem;
+    font-family: "inter bold";
+    border-radius: 0.4rem;
+    box-shadow: 0 0.1rem 0 black;
+    font-size: 0.9rem;
+  }
+
+  .button_container {
+    margin: 0.8rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 9.5rem;
+  }
+
+  .display_timer {
+    width: 8rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: "pop bold";
+    font-size: 2.5rem;
+    color: rgb(29, 29, 29);
+  }
+
+  span {
+    font-family: "lato bold";
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem 0;
+    color: rgba(36, 36, 36, 0.849);
+  }
+
+  .timer_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 0 black;
+    padding: 2rem 0;
+
+    border: 0.13rem solid rgb(0, 0, 0);
+    margin: 1rem 0;
+  }
+
+  .timer_container {
+    margin: 2rem 0 0 0;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .start_stop:active {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0;
+  }
+
+  .reset:active {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0;
+  }
+}
